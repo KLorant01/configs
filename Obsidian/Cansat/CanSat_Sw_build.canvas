@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"07fe0d64147764d0","type":"text","text":"### LoRa_send\n\n| **Duration**: |     |\n| ------------- | --- |\n| **Delay:**    |     |\n\n","x":520,"y":520,"width":250,"height":160,"color":"3"},
+		{"id":"2ee0f243befff6ab","type":"text","text":"### GPS\n\n| **Duration**: |     |\n| ------------- | --- |\n| **Delay:**    |     |\n\n","x":-1143,"y":500,"width":250,"height":160,"color":"5"},
+		{"id":"c32792d84d9940dd","type":"text","text":"### IMU_senzor\n\n| **Duration**: |     |\n| ------------- | --- |\n| **Delay:**    |     |\n\n","x":-883,"y":500,"width":250,"height":160,"color":"5"},
+		{"id":"b5558335f5b0ebc2","type":"text","text":"### BMP_senzor\n\n| **Duration**: |     |\n| ------------- | --- |\n| **Delay:**    |     |\n\n","x":-623,"y":500,"width":250,"height":160,"color":"5"},
+		{"id":"bcd725663da6fd79","type":"text","text":"### Sys_check\n\n| **Duration**: |     |\n| ------------- | --- |\n| **Delay:**    |     |\n\n","x":-363,"y":500,"width":250,"height":160,"color":"5"},
+		{"id":"139e0cadb12bc8db","type":"text","text":"# Main","x":-487,"y":-320,"width":360,"height":83,"color":"1"},
+		{"id":"3355e8aabe20c018","type":"text","text":" Az Sw_Timer adott időközönként hív meg egy függvényt. Segítségével lehet időzíteni feladatokat, Viszont gondot jelent a kimenet visszaküldése.","x":-883,"y":-120,"width":360,"height":140},
+		{"id":"4de7887a8f4e7f09","type":"text","text":"# SW_Timer\n\nchanels:\n\n| Chanel Num | Task                   |\n| ---------- | ---------------------- |\n| 0          | BMP temperature senzor |\n| 1          |                        |\n| 2          |                        |\n| 3          |                        |\n| 4          |                        |\n| 5          |                        |\n| 6          |                        |\n| 7          |                        |\n| 8          |                        |\n\n","x":-403,"y":-120,"width":443,"height":460,"color":"2"},
+		{"id":"33a3f1996a346f4a","type":"text","text":"### SD_write\n\n| **Duration**: |     |\n| ------------- | --- |\n| **Delay:**    |     |\n\n","x":140,"y":520,"width":250,"height":160,"color":"3"},
+		{"id":"1219982df82722b8","type":"text","text":"### Data_process\n\n| **Duration**: |     |\n| ------------- | --- |\n| **Delay:**    |     |\n\n","x":520,"y":740,"width":250,"height":160,"color":"6"},
+		{"id":"c238663ae0c7c97b","type":"text","text":"\n# LoRa radio sequence:\n## aaaa bbb cc dd\n\n| aaaa | bbb | cc  | dd  |     |     |     |     |     |\n| ---- | --- | --- | --- | --- | --- | --- | --- | --- |\n| zz   |     |     |     |     |     |     |     |     |\n","x":960,"y":320,"width":620,"height":280}
+	],
+	"edges":[
+		{"id":"c735b05b09f39020","fromNode":"4de7887a8f4e7f09","fromSide":"bottom","toNode":"2ee0f243befff6ab","toSide":"top","color":"2"},
+		{"id":"f2fc3d7ac3e6eb9f","fromNode":"4de7887a8f4e7f09","fromSide":"bottom","toNode":"c32792d84d9940dd","toSide":"top","color":"2"},
+		{"id":"8ad196fd6972baf2","fromNode":"4de7887a8f4e7f09","fromSide":"bottom","toNode":"b5558335f5b0ebc2","toSide":"top","color":"2"},
+		{"id":"f595bf4f8f681a2c","fromNode":"4de7887a8f4e7f09","fromSide":"bottom","toNode":"bcd725663da6fd79","toSide":"top","color":"2"},
+		{"id":"72bca00daf544e83","fromNode":"4de7887a8f4e7f09","fromSide":"right","toNode":"07fe0d64147764d0","toSide":"top","color":"2"},
+		{"id":"3cc2fd9c97a4cd9a","fromNode":"4de7887a8f4e7f09","fromSide":"right","toNode":"33a3f1996a346f4a","toSide":"top","color":"2"},
+		{"id":"628352a238a6986f","fromNode":"07fe0d64147764d0","fromSide":"left","toNode":"1219982df82722b8","toSide":"left","color":"2"},
+		{"id":"f53d5e25a52ebddd","fromNode":"1219982df82722b8","fromSide":"right","toNode":"07fe0d64147764d0","toSide":"right","color":"6"},
+		{"id":"e3eaa2cb05237059","fromNode":"139e0cadb12bc8db","fromSide":"bottom","toNode":"4de7887a8f4e7f09","toSide":"top","color":"2"},
+		{"id":"9108e35a7fad12b8","fromNode":"3355e8aabe20c018","fromSide":"right","toNode":"4de7887a8f4e7f09","toSide":"left"},
+		{"id":"317b14e2ab5d0c82","fromNode":"2ee0f243befff6ab","fromSide":"bottom","toNode":"33a3f1996a346f4a","toSide":"left","color":"6"},
+		{"id":"f987b0f58f103196","fromNode":"c32792d84d9940dd","fromSide":"bottom","toNode":"33a3f1996a346f4a","toSide":"left","color":"6"},
+		{"id":"d1b2ef602b1c527c","fromNode":"b5558335f5b0ebc2","fromSide":"bottom","toNode":"33a3f1996a346f4a","toSide":"left","color":"6"},
+		{"id":"46653ae461ea8ca3","fromNode":"bcd725663da6fd79","fromSide":"bottom","toNode":"33a3f1996a346f4a","toSide":"left","color":"6"},
+		{"id":"1a18df6e37e62ec8","fromNode":"bcd725663da6fd79","fromSide":"bottom","toNode":"1219982df82722b8","toSide":"left","color":"6"},
+		{"id":"b82c4c874b78c906","fromNode":"b5558335f5b0ebc2","fromSide":"bottom","toNode":"1219982df82722b8","toSide":"left","color":"6"},
+		{"id":"b3132cd7c5d626c9","fromNode":"c32792d84d9940dd","fromSide":"bottom","toNode":"1219982df82722b8","toSide":"left","color":"6"},
+		{"id":"c235786fd23051ed","fromNode":"2ee0f243befff6ab","fromSide":"bottom","toNode":"1219982df82722b8","toSide":"left","color":"6"},
+		{"id":"7aa3cd3f41b1310e","fromNode":"c238663ae0c7c97b","fromSide":"left","toNode":"07fe0d64147764d0","toSide":"right"}
+	]
+}

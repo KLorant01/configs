@@ -1,0 +1,3 @@
+def change():
+    pass
+    # változás
